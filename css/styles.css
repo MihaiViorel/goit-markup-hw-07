@@ -1,0 +1,1206 @@
+:root {
+  --bg-text-color: rgba(33, 33, 33, 1);
+  --active-link: #2196F3;
+  --brand-color: #2196F3;
+  --inactive-link1: #212121;
+  --inactive-link2: #757575;
+  --black: #000;
+  --white: rgba(255, 255, 255, 1);
+  --hero-bg: rgba(47, 48, 58, 1);
+  --list-title1: rgba(33, 33, 33, 1);
+  --list-elements1: rgba(117, 117, 117, 1);
+  --footer-bg: #2F303A;
+  --global-footer-contact: rgba(100%, 100%, 100%, 60%);
+  --our-team-bg: rgba(245, 244, 250, 1);
+  --hero-button-hover: rgba(24, 140, 232, 1);
+  --hero-button-focus: rgba(33, 150, 243, 1);
+  --svg-fill-white_bg: #AFB1B8;
+  --svg-fill-dark_bg: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--bg-text-color);
+}
+
+/* ----------------------------------- Header -----------------------------------*/
+
+/* Header Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 3%;
+  font-style: bold;
+}
+
+.logo-web {
+  color: var(--brand-color);
+}
+
+.logo-studio {
+  color: var(--black);
+}
+
+/* Header Navigation */
+/* List and Text Styling */
+.global-header .main-navigation ul {
+  list-style: none;
+}
+
+.global-header .main-navigation a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 2%;
+  color: var(--inactive-link1);
+}
+
+.global-header .main-navigation a {
+  text-decoration: none;
+}
+
+/* Link Behaviour */
+.current {
+  color: var(--active-link);
+  padding-bottom: 30px;
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+}
+
+.global-header-nav a:active,
+.global-header-nav a:hover,
+.global-header-nav a:focus,
+.global-header-nav a:visited:active,
+.global-header-nav a:visited:hover,
+.global-header-nav a:visited:focus {
+  color: var(--active-link);
+
+}
+
+/* Header Contact */
+.global-header-contact {
+  list-style: none;
+}
+
+.global-header-contact a[ href^="mailto"],
+.global-header-contact a[ href^="tel"] {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 2%;
+  color: var(--inactive-link2);
+}
+
+.global-header-contact a {
+  text-decoration: none;
+}
+
+.global-header-contact a:active,
+.global-header-contact a:hover,
+.global-header-contact a:focus,
+.global-header-contact a:visited:active,
+.global-header-contact a:visited:hover,
+.global-header-contact a:visited:focus {
+  color: var(--active-link);
+}
+
+.global-header-contact a:visited {
+  color: var(--inactive-link2);
+}
+
+/* ----------------------------------- Studio - Main -----------------------------------*/
+/* Hero Section */
+
+.main-hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 6%;
+  color: var(--white);
+}
+
+.main-hero-button {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 6%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--hero-button-focus);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.main-hero-button:hover {
+  background-color: var(--hero-button-hover);
+}
+
+
+/* Our Advantages */
+.main-our_advantages {
+  list-style: none;
+}
+
+.main-our_advantages-list_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 3%;
+  padding-top: 30px;
+  color: var(--list-title1);
+}
+
+.main-our_advantages-list_element {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  color: var(--list-elements1);
+}
+
+/* What we do Section */
+.main-what_we_do {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+}
+
+.main-what_we_do-list {
+  list-style: none;
+}
+
+/* Our Team Section */
+.main-our_team-background {
+  background-color: var(--our-team-bg);
+}
+
+.main-our_team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+}
+
+.main-our_team-list {
+  list-style: none;
+}
+
+.main-our_team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-title1);
+  margin: 0px;
+  padding: 30px 0px 10px 0px;
+}
+
+.main-our_team-list-description {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--list-elements1);
+  margin: 0px;
+}
+
+/* ----------------------------------- Portofolio - Main -----------------------------------*/
+
+/* Button List */
+.main-button_list {
+  list-style: none;
+}
+
+.main-button_list button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 3%;
+  color: var(--list-title1);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button_list button:hover,
+.main-button_list button:active,
+.main-button_list button:focus {
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+
+/* Product List */
+.main-product_list {
+  list-style: none;
+}
+
+.main-product_list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 6%;
+  color: var(--list-title1);
+}
+
+.main-product_list-description {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  color: var(--list-elements1);
+}
+
+/* ----------------------------------- Footer -----------------------------------*/
+.global-footer {
+  background-color: var(--footer-bg);
+}
+
+/* Footer Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  font-style: bold;
+}
+
+.logo-web-footer {
+  color: var(--brand-color);
+}
+
+.logo-studio-footer {
+  color: var(--white);
+}
+
+/* Footer Contact */
+.global-footer-contact {
+  list-style: none;
+  font-style: normal;
+}
+
+.global-footer-contact span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white);
+}
+
+.global-footer-contact a[ href^="mailto"],
+.global-footer-contact a[ href^="tel"] {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--global-footer-contact);
+}
+
+.global-footer-contact a {
+  text-decoration: none;
+}
+
+.global-footer-contact a:active,
+.global-footer-contact a:hover,
+.global-footer-contact a:focus,
+.global-footer-contact a:visited:active,
+.global-footer-contact a:visited:hover,
+.global-footer-contact a:visited:focus {
+  color: var(--active-link);
+}
+
+.global-footer-contact a:visited {
+  color: var(--inactive-link2);
+}
+
+/* ----------------------------------- Tema 3 -----------------------------------*/
+body {
+  margin: 0;
+}
+
+
+/* ----------------------------------- Header -----------------------------------*/
+.main-navigation ul li {
+  padding: 32px 0px;
+}
+
+.global-header-contact li {
+  padding: 32px 0px;
+}
+
+.global-header .logo-link {
+  padding: 24px 93px 25px 215px;
+}
+
+.logo {
+  margin: 0px;
+}
+
+.global-header .main-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 259px;
+  padding: 0px 330px 0px 0px;
+  margin: 0px;
+}
+
+.global-header .global-header-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Header */
+.global-header-container {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.global-header {
+  border-bottom: 1px;
+  border: 1px solid #ECECEC;
+}
+
+/* ----------------------------------- Main - Studio -----------------------------------*/
+/* Hero Section */
+.main-hero {
+  width: 1600 px;
+  height: 600 px;
+}
+
+.main-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
+}
+
+.main-hero-title {
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Advantages */
+.main-our_advantages-list_title {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-our_advantages-list_element {
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.main-our_advantages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 94px 0px 94px 0px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* What we do */
+
+.main-what_we_do {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.main-what_we_do-list {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin: 0 auto;
+  padding: 0px 0px 94px 0px;
+  width: 1200px;
+}
+
+/* Our Team */
+.main-our_team {
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.main-our_team-list li {
+  background-color: white;
+}
+
+.main-our_team-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 0px 94px 0px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* ----------------------------------- Main - Portfolio --------------------------------*/
+/* Button List */
+.main-button_list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 62px 0px 50px 0px;
+  margin: 0 auto;
+}
+
+.main-button_list li button {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+/* Product List */
+.main-product_list li {
+  border: 1px solid #EEEEEE;
+  padding: 0px 0px 0px 0px;
+}
+
+.main-product_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0px 0px 94px 0px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-product_list_text {
+  padding: 20px 24px;
+}
+
+.main-product_list li p {
+  margin: 0px;
+}
+
+.main-product_list-title {
+  padding: 0px 0px 4px 0px;
+}
+
+/* ----------------------------------- Footer ------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-footer {
+  margin: 0px;
+  padding: 60px 0px 28px 0px;
+}
+
+.global-footer-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
+  margin: 0px;
+  padding: 0px 0px 60px 0px;  
+}
+
+/* ---------------- Observatii ------------- */
+.main-what_we_do-list li img,
+.main-our_team-list li img,
+.main-product_list li img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* ------------------------------------------------ Tema 4 ------------------------------------------------------*/
+
+/* ----------------------------------- Webstudio Homepage ------------------------------------------*/
+
+/* ---------------- Header - Contact ------------- */
+.global-header-contact-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  padding-right: 40px;
+}
+
+.global-header-contact-li svg {
+  width: 16px;
+  height: 12px;
+}
+
+/* .global-header-contact-li:hover {
+  color: rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
+} */
+
+.global-header-contact-li:hover #contact-email-icon  {
+  fill: rgba(33, 150, 243, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-header-contact-li:hover #contact-email {
+  color: rgba(33, 150, 243, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-header-contact-li:hover #contact-tel-icon {
+  fill: rgba(33, 150, 243, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-header-contact-li:hover #contact-tel {
+  color: rgba(33, 150, 243, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------------- Hero Background ------------- */
+
+.main-hero-container {
+  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Homepage/Hero-Background.jpg');
+  /* width: 1600px; */
+  background-size: cover;
+  display: flexbox;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+
+/* ---------------- Our Advantages Icons ------------- */
+
+.main-our_advantages-icon {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.main-our_advantages-icon svg {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+}
+
+.main-our_advantages-list_title {
+  padding-top: 30px;
+}
+
+/* ---------------- Our Team Icons ------------- */
+
+.main-our_team-list-social-all {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  padding: 16px 32px 30px 32px;
+}
+
+.main-our_team-list-social {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.main-our_team-list-social svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  fill: #AFB1B8;
+}
+
+.main-our_team-list-social:hover {
+  border: 1px solid #2196F3;
+  background-color: #2196F3;
+}
+
+.main-our_team-list-social svg:hover {
+  fill: #fff;
+}
+
+/* stilizare margini si umbre */
+.main-our_team-list li {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------------- Regular Customers Section ------------- */
+/* text and flex */
+.regular-customers {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.regular-customers h2 {
+  padding: 94px 0px 50px 0px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: auto;
+  letter-spacing: 3%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.regular-customers ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.regular-customers-list {
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+
+/* svg */
+
+.regular-customers ul li svg {
+  width: 106px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: var(--svg-fill-white_bg);
+  ;
+}
+
+.regular-customers ul li svg:hover {
+  fill: var(--active-link);
+  border-color: var(--active-link);
+}
+
+/* ---------------- Footer Social Media ------------- */
+
+.footer-find_us {
+  padding: 75px 0px 96px 70px;
+  
+}
+
+.footer-find_us p {
+  color: #fff;
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 3%;
+}
+
+.footer-find_us a {
+  color: transparent;
+}
+
+
+/* buttons */
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: #434447;
+  border-radius: 100%;
+}
+
+.footer-find_us svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  fill: #fff;
+}
+
+.footer-social-item:hover {
+  border: 1px solid #2196F3;
+  background-color: #2196F3;
+}
+
+
+/* ----------------------------------- Webstudio Portofolio ------------------------------------------*/
+
+.main-button_list li button:hover,
+.main-button_list li button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-product_list li:hover,
+.main-product_list li:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* ----------------------------------------------------------------- Tema 5 -------------------------------------------------------------*/
+
+/* Javascript modal */
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal:not(.is-hidden) {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-box {
+  background-color: #fff;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal-svg {
+  width: 11px;
+  height: 11px;
+}
+
+.close-modal-svg:hover,
+.close-modal-svg:focus {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.close-modal-button {
+  position: absolute;
+  margin-left: 490px;
+  margin-bottom: 543px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ----------------- text overlay --------------------- */
+/* Studio */
+.what-we-do_overlay {
+  position: relative;
+
+}
+
+.what-we-do_text-overlay {
+  position: absolute;
+  top: 224px;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+
+
+}
+
+.what-we-do_text-overlay p {
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Portofolio */
+.main-product_list-overlay_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-product_list-overlay_container-text-overlay {
+  width: 370px;
+  height: 294px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(120%);
+  transition: transform 100ms ease-in-out;
+
+}
+
+.main-product_list-products:hover .main-product_list-overlay_container-text-overlay {
+  transform: translatey(0);
+}
+
+.main-product_list-overlay_container-text-overlay p {
+  width: 80%;
+  padding-left: 25px;
+  padding-top: 45px;
+  padding-bottom: 73px;
+  color: #fff;
+}
+
+/* ---------- Transitions ------------ */
+/* Studio */
+.main-navigation-studio {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-hero-button:hover {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-our_team-list-social svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-our_team-list-social {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-list ul li svg {
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal-svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-item {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Portofolio */
+.main-button_list li button {
+  transition-property: box-shadow, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-product_list-products {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* ----------------------------------------------------------------- Tema 6 -------------------------------------------------------------*/
+
+.modal-box p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.contact-form {
+  padding: 10px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1%;
+  color: rgba(117, 117, 117, 1);
+}
+
+.form-input-container {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: 40px;
+  position: relative;
+}
+
+.form-input {
+  width: 402px;
+  height: 40px;
+  margin: 0 auto;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+}
+
+.form-input-container:hover svg {
+  fill: rgba(33, 150, 243, 1);;
+}
+
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  border-radius: 4px;
+}
+
+.form-input:focus + svg {  
+  fill: rgba(33, 150, 243, 1);
+  transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
+
+.form-input-icons {
+  width: 18px;
+  height: 18px;
+  fill: rgba(33, 33, 33, 1);
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
+.form-comment-text {
+  width: 416px;
+  height: 82px;
+  margin: 0 auto;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
+  margin-top: 4px;
+  resize: none;
+  outline: none;
+}
+
+.form-comment-text::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-comment-text:hover,
+.form-comment-text:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  border-radius: 4px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-checkbox-input:checked {
+  accent-color: rgba(33, 150, 243, 1);
+}
+
+.checkbox-text {
+  color: rgba(117, 117, 117, 1);
+  padding-top: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  font-weight: 400;
+  padding-left: 8px;
+}
+
+.checkbox-text a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  color: rgba(33, 150, 243, 1);
+}
+
+.checkbox-text a:visited,
+.checkbox-text a:hover,
+.checkbox-text a:focus {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: rgba(33, 150, 243, 1);
+}
+
+.form-submit-button {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+  background-color: rgba(33, 150, 243, 1);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: rgba(24, 140, 232, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------------------------- Footer ---------------------------- */
+/* Newsletter form */
+.newsletter-form {
+  padding: 72px 0px 93px 93px;
+  display: flex;
+  gap: 12px;
+}
+
+.global-footer-container {
+  width: 231px;
+}
+
+.newsletter-form-label {
+  font-size: 700;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);  
+}
+
+.newsletter-form-input {
+  margin-top: 20px;
+  width: 358px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.newsletter-form-input::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 15px 0px 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-form-input:hover,
+.newsletter-form-input:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  border-radius: 4px;
+}
+
+.newsletter-subscribe-button {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  color: var(--white);
+  background-color: var(--hero-button-focus);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0px 77px 0px 43px;    
+}
+
+.footer-newsletter-button {
+  padding-top: 40px;
+  position: relative;
+}
+
+.newsletter-subscribe-icon {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 53px;
+  left: 148px;  
+}
+
+
+

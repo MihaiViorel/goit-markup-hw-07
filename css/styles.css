@@ -122,7 +122,7 @@ body {
 }
 
 .global-header-contact li {
-  padding: 32px 0px;
+  padding: 32px 40px 0px 0px;
 }
 
 .global-header-contact a[ href^="mailto"],
@@ -155,8 +155,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 10px;
-  padding-right: 40px;
+  column-gap: 10px;  
 }
 
 .global-header-contact-li svg {
@@ -202,15 +201,17 @@ body {
   letter-spacing: 6%;
   color: var(--white);
   margin: 0;
-  padding: 30px;
+  padding: 0px 0px 30px 0px;
   text-align: center;
 }
 
 .main-hero-container {
   background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Homepage/Hero-Background.jpg');
   background-size: cover;
-  display: flexbox;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
   margin: 0 auto;
 }
 
@@ -253,13 +254,6 @@ body {
   height: 600 px;
 }
 
-.main-hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 0px;
-}
-
 /* Our Advantages */
 .main-our_advantages {
   list-style: none;
@@ -279,8 +273,7 @@ body {
   letter-spacing: 3%;
   padding-top: 30px;
   color: var(--list-title1);
-  margin: 0px;
-  padding: 0px;
+  margin: 0px;  
 }
 
 
@@ -328,9 +321,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(47, 48, 58, 0.8);
-
-
+  background-color: rgba(47, 48, 58, 0.8);  
 }
 
 .what-we-do_text-overlay p {
@@ -1065,3 +1056,74 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ------------------------------------------ Media Query ------------------------------------------ */
+
+/* ------------------ Tablet ------------------ */
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .global-header {
+    margin: 0 auto;
+  }
+  .global-header .logo-link {
+    padding: 26px 93px 26px 15px;
+  }
+
+  .main-navigation ul li {
+    padding: 32px 0px;
+  }
+  .global-header .main-navigation ul {
+  padding: 0px 114px 0px 0px;
+  }
+
+  .global-header-contact {    
+    display: flex;    
+    flex-direction: column;
+    padding: 21px 15px 21px 0px;
+    gap: 10px;
+  }
+
+  .global-header-contact li {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    
+  }
+  /* Hero */
+  .main-hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 6%;    
+    text-align: center;
+  }
+
+  .main-hero-container {
+    padding: 118px 0px;
+  }
+
+  .main-our_advantages {
+    padding: 60px 0px 60px 0px;
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+  }
+}
+
+
+
+
+
+/* ------------------ Desktop ------------------ */
+
+
+
+
+
+

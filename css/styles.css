@@ -258,11 +258,24 @@ body {
 .main-our_advantages {
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 30px;
   padding: 94px 0px 94px 0px;
   width: 1200px;
   margin: 0 auto;
+}
+
+.our_advantages-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.our_advantages-container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 
@@ -701,7 +714,6 @@ body {
 
 .footer-find_us {
   padding: 75px 0px 96px 70px;
-
 }
 
 .footer-find_us p {
@@ -1069,21 +1081,18 @@ body {
   .global-header .logo-link {
     padding: 26px 93px 26px 15px;
   }
-
   .main-navigation ul li {
     padding: 32px 0px;
   }
   .global-header .main-navigation ul {
   padding: 0px 114px 0px 0px;
   }
-
   .global-header-contact {    
     display: flex;    
     flex-direction: column;
     padding: 21px 15px 21px 0px;
     gap: 10px;
   }
-
   .global-header-contact li {
     display: flex;
     justify-content: flex-start;
@@ -1098,11 +1107,10 @@ body {
     letter-spacing: 6%;    
     text-align: center;
   }
-
   .main-hero-container {
     padding: 118px 0px;
   }
-
+    /* Our Advantages */
   .main-our_advantages {
     padding: 60px 0px 60px 0px;
     width: 768px;
@@ -1110,20 +1118,112 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    
+  }
+  .our_advantages-container1,
+  .our_advantages-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+    .main-our_advantages-icon {
+      width: 354px;
+      display: flex;
+      justify-content: center;
+    }
+  
+  /* What we do */
+  
+  .what-we-do-container {
+    display: none;
+  }
+  /* Our Team */
+  .main-our_team {    
+    font-size: 28px;
+    line-height: 1.17;    
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .our_team-container1,
+  .our_team-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .main-our_team-list {
+    padding: 0px 0px 60px 0px;
+  }
+  .main-our_team-list {
+    width: 768px;
+  }
+  /* Regular Customers */
+  .regular-customers {
+    width: 768px;
+  }
+  .regular-customers h2 {
+    padding: 60px 0px 30px 0px;
+  }
+  .regular-customers-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .regular-customers_container1,
+  .regular-customers_container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .regular-customers-list {
+    padding-bottom: 60px;
+  }
+  /* Footer */
+  .footer {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .footer-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .newsletter-form {
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .global-footer-container ul {
+    padding: 0px 0px 0px 0px;
+  }
+  
+  .footer-find_us {
+    padding: 75px 0px 0px 70px;
+  }
+
+  .newsletter-form-label {
+    text-align: center;
+  }
+
+  .newsletter-label_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-newsletter-button {
+    padding-top: 28px;
+    
+  .newsletter-subscribe-icon {
+    position: absolute;
+    top: 41px;
+    left: 148px;
   }
 }
 
-
-
-
-
 /* ------------------ Desktop ------------------ */
-
-
-
-
-
 

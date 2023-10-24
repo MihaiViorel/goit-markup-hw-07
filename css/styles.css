@@ -1070,6 +1070,220 @@ body {
 
 /* ------------------------------------------ Media Query ------------------------------------------ */
 
+/* ------------------ Mobile ------------------ */
+@media screen and (min-width: 480px) {  
+  .global-header,
+  .global-header-container,
+  .main-what_we_do-list,  
+  .main-advantages-container,
+  .main-our_team,
+  .regular-customers,
+  .footer,
+  .main,
+  .body {
+    width: 480px;
+    margin: 0 auto;
+  }
+    .main-navigation,
+    .global-header-contact,
+    .what-we-do-container {
+    display: none;
+  }
+
+  .global-header .logo-link {
+    padding: 16px 0px 16px 15px;
+  }
+
+  .main-hero-title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+  }
+
+  .main-hero-container {
+    padding: 118px 0px;
+  }
+
+  .main-our_advantages {
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-our_advantages-list_title,
+  .main-our_advantages-list_element {
+    width: 450px;
+  }
+
+  .main-our_team-list {
+    width: 480px;
+    padding: 0px 0px 60px 0px;
+  }
+
+  .our_advantages-container1,
+  .our_advantages-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-our_advantages-icon {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-our_advantages {
+    width: 450px;
+  }
+
+  .main-our_team {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .main-our_team-list{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .our_team-container1,
+  .our_team-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 480px;
+  }
+
+  .our_team-container1 li,
+  .our_team-container2 li {
+    width: 450px;
+    height: 622px;
+    padding: 0px 0px;
+  }
+
+  .our_team-container1 li picture img,
+  .our_team-container2 li picture img{
+    width: 450px;
+    height: 460px;
+  }
+
+  /* .our_team-container1,
+  .our_team-container2 {
+    padding: 0px 15px;
+  } */
+
+  .regular-customers h2 {
+    padding: 60px 0px 30px 0px;
+  }
+
+  .regular-customers-list {
+    padding-bottom: 60px;
+  }
+
+  .regular-customers ul li svg {
+    width: 210px;
+    height: 92px;
+  }
+
+
+
+
+
+
+
+  /* Footer */
+  .footer {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .global-footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+  }
+  .footer-find_us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+  }
+
+  .global-footer-contact {
+    text-align: center;
+  }
+  .newsletter-form {
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+  }
+  .global-footer-container ul {
+    padding: 0px 0px 0px 0px;
+  }
+  .footer-find_us {
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .newsletter-form-label {
+    text-align: center;
+  }
+  .newsletter-label_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-newsletter-button {
+    padding-top: 28px;
+  }
+  .newsletter-subscribe-icon {
+    position: absolute;
+    top: 41px;
+    left: 148px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* _________________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
 /* ------------------ Tablet ------------------ */
 
 @media screen and (min-width: 768px) {
@@ -1224,10 +1438,10 @@ body {
     top: 41px;
     left: 148px;
   }
+
   /* width control */
   .global-header-container,
   .global-header,
-  /* .main-hero, */
   .main-our_advantages-list_element,
   .main-what_we_do-list,
   .main-our_team {

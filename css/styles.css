@@ -1079,13 +1079,13 @@ body {
     margin: 0 auto;
   }
   .global-header .logo-link {
-    padding: 26px 93px 26px 15px;
+    padding: 26px 83px 26px 15px;
   }
   .main-navigation ul li {
     padding: 32px 0px;
   }
   .global-header .main-navigation ul {
-  padding: 0px 114px 0px 0px;
+  padding: 0px 104px 0px 0px;
   }
   .global-header-contact {    
     display: flex;    
@@ -1113,7 +1113,7 @@ body {
     /* Our Advantages */
   .main-our_advantages {
     padding: 60px 0px 60px 0px;
-    width: 768px;
+    width: 738px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1182,6 +1182,7 @@ body {
   .footer {
     width: 768px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -1224,7 +1225,154 @@ body {
     top: 41px;
     left: 148px;
   }
+  /* width control */
+  .global-header-container,
+  .global-header,
+  .main-hero,
+  .main-our_advantages-list_element,
+  .main-what_we_do-list,
+  .main-our_team {
+    width: 768px;
+  }
+
+  .main-our_advantages-list_title,
+  .main-our_advantages-list_element {
+    width: 354px;
+  }
+
+
 }
 
 /* ------------------ Desktop ------------------ */
+
+@media screen and (min-width: 1158px) {
+  .global-header,
+  .global-header-container,
+
+  .main-hero,
+  .main-hero-container,
+
+  .what-we-do-container,
+  .main-what_we_do-list,
+  .main-our_advantages,
+  .main-advantages-container,
+  .main-our_team,
+  .main-our_team-background,
+  .main-our_advantages,
+  .regular-customers,
+  .footer,
+  .global-footer,
+  .main,
+  .body {
+    width: 1600px;
+    margin: 0 auto;
+  }
+
+  .what-we-do-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .global-header .logo-link {
+    padding: 24px 93px 25px 215px;
+  }
+
+  .global-header .main-navigation ul {
+    padding: 0px 330px 0px 0px;
+  }
+
+  .global-header-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 32px 215px 32px 0px;
+  }
+
+  .main-our_advantages {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .our_advantages-container1,
+  .our_advantages-container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .our_advantages-container1,
+  .our_advantages-container2 {
+    width: 570px;
+  }
+
+  .our_advantages-container1 li,
+  .our_advantages-container2 li{
+    width: 270px;
+  }
+
+  .main-our_advantages-list_title,
+  .main-our_advantages-list_element {
+    width: 270px;
+  }
+
+  .main-our_advantages-icon {
+    width: 270px;
+  }
+
+  .main-our_team-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .our_team-container1,
+  .our_team-container2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-our_team-list {
+    width: 1170px;
+    padding: 0px 0px 94px 0px;;
+  }
+
+  .main-our_team {
+    font-size: 36px;
+  }
+
+  .regular-customers-list ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 93px;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .newsletter-form-label {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .footer-newsletter-button {
+    padding: 36px 0px 0px 0px;
+  }
+
+  .newsletter-subscribe-icon {
+    position: absolute;
+    top: 47px;
+    left: 148px;
+  }
+}
+
 

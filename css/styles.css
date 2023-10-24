@@ -1076,7 +1076,7 @@ body {
   /* Header */
   .global-header {
     margin: 0 auto;
-    width: 768px;
+    /* width: 768px; */
   }
   .global-header .logo-link {
     padding: 26px 83px 26px 15px;
@@ -1227,11 +1227,11 @@ body {
   /* width control */
   .global-header-container,
   .global-header,
-  .main-hero,
+  /* .main-hero, */
   .main-our_advantages-list_element,
   .main-what_we_do-list,
   .main-our_team {
-    /* width: 768px; */
+    width: 768px;
   }
 
   .main-our_advantages-list_title,

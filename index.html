@@ -13,17 +13,59 @@
   <title>Studio</title>  
 </head>
 <body>
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg class="close-menu-svg-mobile">
+        <use href="./images/icons.svg#burger-menu-close"></use>
+      </svg>
+    </button>
+  
+    <ul class="nav-list-mobile">
+      <li>
+        <a class="mobile-menu-navbar" href="index.html">Studio</a>
+      </li>
+      <li>
+        <a class="mobile-menu-navbar" href="portfolio.html">Portfolio</a>
+      </li>
+      <li><a class="mobile-menu-navbar" href="#">Contacts</a></li>
+    </ul>
+  
+    <ul class="contact-list-mobile">
+      <li class="phone-mobile-class">
+        <a class="mobile-contact-links" href="#">+1 212-772-4150</a>
+      </li>
+      <li class="email-mobile-class">
+        <a class="mobile-contact-links" href="#">info@devstudio.com</a>
+      </li>
+    </ul>
+  
+    <ul class="mobile-menu-socials">
+      <li>
+        <a class="mobile-social-links" href="#">Instagram</a><span>|</span>
+      </li>
+      <li>
+        <a class="mobile-social-links" href="#">Twitter</a><span>|</span>
+      </li>
+      <li>
+        <a class="mobile-social-links" href="#">Facebook</a><span>|</span>
+      </li>
+      <li><a class="mobile-social-links" href="#">LinkedIn</a></li>
+    </ul>
+  </div>
   <header class="global-header">
     <div class="global-header-container">
       <a href="#" class="logo-link">
         <p class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></p>
       </a>
+      <svg class="mobile-menu-icon js-open-menu">
+        <use href="./images/icons.svg#burger-menu"></use>
+      </svg>
       <nav class="main-navigation">
         <ul class="global-header-nav">
           <li><a href="./index.html" class="main-navigation-studio"><span class="current">Studio</span></a></li>
           <li><a href="./portofolio.html" class="main-navigation-portofolio">Portofolio</a></li>
           <li><a href="#" class="main-navigation-contacts">Contacts</a></li>
-        </ul>
+        </ul>        
       </nav>
       <ul class="global-header-contact">
         <li>
@@ -532,6 +574,10 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
 

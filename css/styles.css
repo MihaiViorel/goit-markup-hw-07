@@ -1094,6 +1094,134 @@ body {
     padding: 16px 0px 16px 15px;
   }
 
+    /* _______________________ Burger Menu __________________ */
+
+  .mobile-menu-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    top: 10;
+    cursor: pointer;
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  }
+  .mobile-menu-icon:hover {
+    fill: rgba(33, 150, 243, 1);
+  }
+  .js-menu-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    z-index: 1;
+  }
+  .js-close-menu {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .close-menu-svg-mobile:hover {
+    fill: rgba(33, 150, 243, 1);
+  }
+  .close-menu-svg-mobile {
+    width: 40px;
+    height: 40px;
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  }
+  .js-menu-container:not(.is-open) {
+    visibility: hidden;
+  }
+  .nav-list-mobile {
+    position: absolute;
+  }
+  .nav-list-mobile li {
+    padding-top: 48px;
+    list-style-type: none;
+  }
+  .contact-list-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    list-style-type: none;
+    gap: 32px;
+    padding-bottom: 134px;
+  }
+  .phone-mobile-class {
+    font-family: var(--heading-font-family);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: rgba(33, 150, 243, 1);
+  }
+  .email-mobile-class {
+    font-family: var(--heading-font-family);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+  }
+  .mobile-menu-socials {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 48px;
+    gap: 10px;
+    color: rgba(33, 150, 243, 1);
+    font-family: var(--heading-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .mobile-menu-socials span {
+    padding-left: 10px;
+    color: rgba(33, 33, 33, 0.2);
+  }
+  .mobile-contact-links {
+    text-decoration: none;
+    color: rgba(117, 117, 117, 1);
+    transition: color 250ms ease,
+      cubic-bezier(0.4, 0, 0.2, 1) ease;
+  }
+  .mobile-social-links {
+    text-decoration: none;
+    color: rgba(33, 150, 243, 1);
+  }
+  .mobile-contact-links:hover {
+    color: rgba(33, 150, 243, 1);
+  }
+  .mobile-menu-navbar {
+    text-decoration: none;
+    font-family: var(--heading-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: var(--default-text-color);
+  }
+  .nav-list-mobile a:hover {
+    color: rgba(33, 150, 243, 1);
+    transition: color 250ms ease,
+      cubic-bezier(0.4, 0, 0.2, 1) ease;
+  }
+  
+  
+  
+  /* _________________________________________ */
+
+
+  
+
   .main-hero-title {
     font-size: 26px;
     font-weight: 900;
@@ -1116,12 +1244,7 @@ body {
     width: 450px;
   }
 
-  .main-our_team-list {
-    width: 480px;
-    padding: 0px 0px 60px 0px;
-  }
-
-  .our_advantages-container1,
+    .our_advantages-container1,
   .our_advantages-container2 {
     display: flex;
     flex-direction: column;
@@ -1137,6 +1260,11 @@ body {
     width: 450px;
   }
 
+  .main-our_team-list {
+    width: 450px;
+    padding: 0px 15px 60px 15px;
+  }
+
   .main-our_team {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -1144,8 +1272,7 @@ body {
 
   .main-our_team-list{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
   }
 
   .our_team-container1,
@@ -1153,7 +1280,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 480px;
+    width: 450px;
   }
 
   .our_team-container1 li,
@@ -1185,7 +1312,17 @@ body {
   .regular-customers ul li svg {
     width: 210px;
     height: 92px;
+    padding: 0px;
   }
+
+  .regular-customers_container1,
+  .regular-customers_container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
 
 
 
@@ -1255,6 +1392,9 @@ body {
     top: 41px;
     left: 148px;
   }
+
+  
+  
 
 
 
@@ -1453,6 +1593,58 @@ body {
     width: 354px;
   }
 
+  /* ------------ Adjutments ------------ */
+  .mobile-menu-icon {
+    display: none;
+  }  
+
+  .main-navigation {
+    display: block;
+  }
+
+  .main-advantages-container {
+    width: 738px;
+  }
+
+  .main-our_team-list {
+    width: 738px;
+    padding: 0px 0px 60px 0px;
+  }
+  .main-our_team {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .main-our_team-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .our_team-container1,
+  .our_team-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 738px;
+  }
+  .our_team-container1 li,
+  .our_team-container2 li {
+    width: 354px;
+    height: 536px;
+    padding: 0px 0px;
+  }
+  .our_team-container1 li picture img,
+  .our_team-container2 li picture img {
+    width: 354px;
+    height: 374px;
+  }
+
+  .footer-find_us {
+    width: 206px;
+    padding: 65px 0px 0px 165px;
+  }
+  .global-footer-container {
+    width: 232px;
+  }
+
 
 }
 
@@ -1463,7 +1655,6 @@ body {
   .global-header-container,
   .what-we-do-container,
   .main-what_we_do-list,
-  .main-our_advantages,
   .main-advantages-container,
   .main-our_team,
   .main-our_advantages,
@@ -1622,6 +1813,54 @@ body {
 
   .global-footer-container ul {
     padding: 0px 0px 60px 0px;
+  }
+
+  /* ------------ Adjutments ------------ */
+  .mobile-menu-icon {
+    display: none;
+  }
+  .main-navigation {
+    display: block;
+  }
+  .main-advantages-container {
+    width: 1170px;
+  }
+  .main-our_team-list {
+    width: 1170px;
+    padding: 0px 0px 94px 0px;
+  }
+  .main-our_team {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+  .main-our_team-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .our_team-container1,
+  .our_team-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 1170px;
+  }
+  .our_team-container1 li,
+  .our_team-container2 li {
+    width: 270px;
+    height: 428px;
+    padding: 0px 0px;
+  }
+  .our_team-container1 li picture img,
+  .our_team-container2 li picture img {
+    width: 270px;
+    height: 260px;
+  }
+  .footer-find_us {
+    width: 206px;
+    padding: 65px 0px 0px 165px;
+  }
+  .global-footer-container {
+    width: 232px;
   }
 }
 

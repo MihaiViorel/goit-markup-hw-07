@@ -1244,6 +1244,10 @@ body {
     width: 450px;
   }
 
+  .main-our_advantages-list_title {
+    text-align: center;
+  }
+
     .our_advantages-container1,
   .our_advantages-container2 {
     display: flex;
@@ -1393,21 +1397,12 @@ body {
     left: 148px;
   }
 
-  
-  
+  /* TODO: De dimensionat elementele din modal */
 
-
-
-
-
-
-
-
-
-
-
-
-
+  /* .modal-box {
+    width: 450px;
+    height: 609px;
+  } */
 }
 
 
@@ -1645,6 +1640,10 @@ body {
     width: 232px;
   }
 
+  .main-our_advantages-list_title {
+    text-align: left;
+  }
+
 
 }
 
@@ -1657,7 +1656,6 @@ body {
   .main-what_we_do-list,
   .main-advantages-container,
   .main-our_team,
-  .main-our_advantages,
   .regular-customers,
   .footer,  
   .main,
@@ -1786,7 +1784,7 @@ body {
   .footer {
     display: flex;
     flex-direction: row;
-    gap: 93px;
+    gap: 0px;
   }
 
   .newsletter-form {
@@ -1855,12 +1853,44 @@ body {
     width: 270px;
     height: 260px;
   }
+
+  .regular-customers ul li svg {
+    width: 170px;
+    height: 92px;
+    padding: 0px;
+  }
+
   .footer-find_us {
     width: 206px;
-    padding: 65px 0px 0px 165px;
+    padding: 72px 0px 0px 70px;
+    align-items: flex-start;
   }
   .global-footer-container {
     width: 232px;
+  }
+
+  .footer-find_us {
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .global-footer-contact {
+    text-align: left;
+  }
+  
+  .newsletter-form {
+    width: 570px;
+    padding: 72px 0px 93px 93px;
+  }
+
+  .footer-container-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .main-our_advantages-list_title {
+    text-align: left;
   }
 }
 

@@ -434,6 +434,7 @@
               <div class="newsletter-label_input">
                 <label for="form-email" class="newsletter-form-label">SUBSCRIBE TO THE NEWSLETTER</label>
                 <div class="newsletter-form-input_container">
+                  <!-- TODO: de facut observatia de la Viktor -->
                   <input type="email" id="form-email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                     class="newsletter-form-input" placeholder="E-mail">
                 </div>
@@ -441,9 +442,11 @@
             </div>
             <div class="footer-newsletter-button">
               <input type="submit" class="newsletter-subscribe-button" value="Subscribe">
-              <svg class="newsletter-subscribe-icon">
-                <use href="./images/icons.svg#footer-subscribe_button"></use>
-              </svg>
+              <a href="#">
+                <svg class="newsletter-subscribe-icon">
+                  <use href="./images/icons.svg#footer-subscribe_button"></use>
+                </svg>
+              </a>
               </button>
             </div>
           </form>

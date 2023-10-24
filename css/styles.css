@@ -76,8 +76,7 @@ body {
 }
 
 .global-header {
-  border-bottom: 1px;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .global-header .main-navigation a {
@@ -443,7 +442,7 @@ body {
 
 .main-our_team-list-social-all {
   display: flex;
-  gap: 7px;
+  gap: 6px;
   justify-content: center;
   padding: 16px 32px 30px 32px;
 }
@@ -1077,6 +1076,7 @@ body {
   /* Header */
   .global-header {
     margin: 0 auto;
+    width: 768px;
   }
   .global-header .logo-link {
     padding: 26px 83px 26px 15px;
@@ -1117,7 +1117,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
   .our_advantages-container1,
   .our_advantages-container2 {
@@ -1232,7 +1231,7 @@ body {
   .main-our_advantages-list_element,
   .main-what_we_do-list,
   .main-our_team {
-    width: 768px;
+    /* width: 768px; */
   }
 
   .main-our_advantages-list_title,
@@ -1248,20 +1247,14 @@ body {
 @media screen and (min-width: 1158px) {
   .global-header,
   .global-header-container,
-
-  .main-hero,
-  .main-hero-container,
-
   .what-we-do-container,
   .main-what_we_do-list,
   .main-our_advantages,
   .main-advantages-container,
   .main-our_team,
-  .main-our_team-background,
   .main-our_advantages,
   .regular-customers,
-  .footer,
-  .global-footer,
+  .footer,  
   .main,
   .body {
     width: 1600px;
@@ -1286,6 +1279,28 @@ body {
     flex-direction: row;
     gap: 40px;
     padding: 32px 215px 32px 0px;
+  }
+
+  .main-hero-container {
+    padding: 200px 0px;
+  }
+
+  .main-hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    padding: 30px;
+  }
+
+  .main-hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  .main-our_advantages {
+    gap: 30px;
+    padding: 94px 0px 94px 0px;
   }
 
   .main-our_advantages {
@@ -1321,9 +1336,18 @@ body {
     width: 270px;
   }
 
+  .main-our_team {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+
+
+  
+
   .main-our_team-list {
     display: flex;
     flex-direction: row;
+    gap: 30px;
   }
 
   .our_team-container1,
@@ -1339,6 +1363,14 @@ body {
 
   .main-our_team {
     font-size: 36px;
+  }
+
+  .regular-customers-list {
+    padding-bottom: 94px;
+  }
+
+  .regular-customers h2 {
+    padding: 94px 0px 50px 0px;
   }
 
   .regular-customers-list ul{
@@ -1372,6 +1404,10 @@ body {
     position: absolute;
     top: 47px;
     left: 148px;
+  }
+
+  .global-footer-container ul {
+    padding: 0px 0px 60px 0px;
   }
 }
 

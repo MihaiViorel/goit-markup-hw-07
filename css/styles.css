@@ -1403,7 +1403,47 @@ body {
     width: 450px;
     height: 609px;
   } */
+
+  /* Portofolio */
+
+  .main-button_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 60px 0px 40px 0px;
+    letter-spacing: 0.03em;
+    width: 300px;
+  }
+
+  /* .main-button_list-container {
+    width: 274px;
+    margin: 0 auto;
+  } */
+
+  .main-product_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    gap: 30px;
+  }
+
+  .main-button_list-container {
+    width: 480px;
+  }
+
+  .main-product_list-overlay_container picture img {
+    width: 450px;
+    height: 294px;    
+  }
+
+  .main-product_list-products {
+    width: 450px;
+    height: 404px;
+    padding: 0px 15px;
+  }
 }
+
 
 
 
@@ -1642,6 +1682,41 @@ body {
 
   .main-our_advantages-list_title {
     text-align: left;
+  }
+  
+  /* ---- Portofolio ---- */
+  
+  .main-button_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 60px 0px 30px 0px;
+    letter-spacing: 0.03em;
+    width: 516px;
+  }
+
+  .main-button_list-container {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+    .main-product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 742px;
+    gap: 30px;
+  }
+  
+  .main-product_list-overlay_container picture img {
+    width: 354px;
+    height: 294px;
+  }
+  .main-product_list-products {
+    width: 354px;
+    height: 440px;
+    padding: 0px 15px;
   }
 
 
@@ -1891,6 +1966,37 @@ body {
 
   .main-our_advantages-list_title {
     text-align: left;
+  }
+
+  /* ---- Portofolio ---- */
+    .main-button_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 60px 0px 30px 0px;
+    letter-spacing: 0.03em;
+    width: 516px;
+  }
+    .main-button_list-container {
+    margin: 0 auto;
+    width: 1170px;
+  }
+    .main-product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1180px;
+    gap: 30px;
+  }
+    .main-product_list-overlay_container picture img {
+    width: 370px;
+    height: 294px;
+  }
+    .main-product_list-products {
+    width: 370px;
+    height: 404px;
+    padding: 0px 15px;
   }
 }
 

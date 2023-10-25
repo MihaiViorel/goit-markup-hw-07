@@ -1432,7 +1432,8 @@ body {
     width: 480px;
   }
 
-  .main-product_list-overlay_container picture img {
+  .main-product_list-overlay_container picture img,
+  .main-product_list-overlay_container-text-overlay {
     width: 450px;
     height: 294px;    
   }
@@ -1709,7 +1710,8 @@ body {
     gap: 30px;
   }
   
-  .main-product_list-overlay_container picture img {
+  .main-product_list-overlay_container picture img ,
+  .main-product_list-overlay_container-text-overlay {
     width: 354px;
     height: 294px;
   }
@@ -1989,7 +1991,8 @@ body {
     width: 1180px;
     gap: 30px;
   }
-    .main-product_list-overlay_container picture img {
+    .main-product_list-overlay_container picture img ,
+    .main-product_list-overlay_container-text-overlay {
     width: 370px;
     height: 294px;
   }
